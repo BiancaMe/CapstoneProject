@@ -3,17 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home-m.css">
+    <link rel="stylesheet" href="css/menu-mobile.css">
     <link rel="stylesheet" href="css/program.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/interviwes.css">
     <script src="https://kit.fontawesome.com/0972d4b4f4.js" crossorigin="anonymous"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Bianca: Capstone Project</title>
 </head>
 <body>
-    <header id="header">
-       <button id="menu"><i class="fa-sharp fa-solid fa-bars"></i></button> 
+    <header id="header" class="shadow">
+       <div id="account">
+            <ul>
+                <li class="account-icon"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="account-icon"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="account-item"><a href="">English</a></li>
+                <li class="account-item"><a href="">Mypage</a></li>
+                <li class="account-item"><a href="">Logout</a></li>
+            </ul>
+       </div>
+       <button id="menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
+       <div id="nav-logo">
+        <a id="logo" href="#home">Yesterland</a>
+        <nav>
+         <ul>
+             <li class="nav-item"><a href="#about"  class="btn-h">About</a></li>
+             <li class="nav-item"><a href="#program" class="btn-h">Program</a></li>
+             <li class="nav-item"><a href="#about"  class="btn-h">Join</a></li>
+             <li class="nav-item"><a href="#about  " class="btn-h">Sponsor</a></li>
+             <li class="nav-item"><a href="#about" class="btn-h">News</a></li>
+             <li class="nav-item-out"><a href="#about" class="btn-o">CC Tickets</a></li>
+         </ul>
+        </nav>
+       </div> 
     </header>
     <section id="home">
         <div id="home-container">
@@ -30,6 +55,24 @@
             <h4 id="tag">@Yesterland</h4>
         </div>
     </section>
+    <div class="menu-mobile">
+        <div id="menu-container">
+            <button type="button" class="close-pop">&times;</button>
+            <h3 id="menu-h">Menu</h3>
+            <ul class="menu-m">
+                <li class="item-m"><a href="#about"  class="btn-m">About</a></li>
+                <li class="item-m"><a href="#program" class="btn-m">Program</a></li>
+                <li class="item-m"><a href="#interviwes"  class="btn-m">Interviwes</a></li>
+                <li class="item-m"><a href="#home  " class="btn-m">Sponsor</a></li>
+                <li class="item-m"><a href="#home" class="btn-m">News</a></li>
+                <li class="item-m out"><a href="#home" class="btn-m">CC Tickets</a></li>
+            </ul>
+            <div id="menu-account">
+                <a class="menu-link" href="#home">Mypage</a>
+                <a class="menu-link" href="#home">Logout</a>
+            </div>
+        </div>
+    </div>
     <section id="program">
         <h2 id="program-h">Line-Up</h2>
         <hr>
@@ -74,7 +117,7 @@
         </div>
         <button id="join">Yesterland Tickets</button>
     </section>
-    <section id="about">
+    <section id="about" class="about">
         <div id="about-container">
             <h3 class="small-heading">Arrives in Urugay...</h3>
             <h2 id="big-heading-about">   
@@ -88,5 +131,78 @@
             <h4 id="about-email">contact@yesterland.com</h4>
         </div>
     </section>
+    <section id="interviwes">
+        <h2 id="bands-h">Interviwes</h2>
+        <hr class="hr orange">
+        <div id="bands-c">
+            <ul id="band-grid">
+                <li id="b-1" class="band-item">
+                    <div id="bg-perfil">
+                        <img class="bg-perfil" src="css/img/pngwing.com.png">
+                        <img class="perfil" src="css/img/perfil-1.jpg">
+                        <img class="hidden" src="css/img/band-1-1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="name">Anthony Kiedis</h3>
+                        <p class="band-group">Red Hot Chili Pepers</p>
+                        <hr class="hr">
+                        <p class="i-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium culpa iusto nobis, soluta vero harum, dolor voluptates obcaecati non blanditiis odio?.</p>
+                    </div>
+                </li>
+                <li  id="b-2" class="band-item">
+                    <div id="bg-perfil">
+                        <img class="bg-perfil" src="css/img/pngwing.com.png">
+                        <img class="perfil" src="css/img/perfil-2.jpg">
+                        <img class="hidden" src="css/img/band-1-1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="name">Clemens Rehbein</h3>
+                        <p class="band-group">Milky Chance</p>
+                        <hr class="hr">
+                        <p class="i-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium culpa iusto nobis, soluta vero harum, dolor voluptates obcaecati non blanditiis odio?.</p>
+                    </div>
+                </li>
+                <li id="b-3" class="band-item">
+                    <div id="bg-perfil">
+                        <img class="bg-perfil" src="css/img/pngwing.com.png">
+                        <img class="perfil" src="css/img/perfil-3.jpg">
+                        <img class="hidden" src="css/img/band-1-1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="name">Jon Bon Jovi</h3>
+                        <p class="band-group">Bon Jovi</p>
+                        <hr class="hr">
+                        <p class="i-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium culpa iusto nobis, soluta vero harum, dolor voluptates obcaecati non blanditiis odio? .</p>
+                    </div>
+                </li>
+                <li id="b-4" class="band-item">
+                    <div id="bg-perfil">
+                        <img class="bg-perfil" src="css/img/pngwing.com.png">
+                        <img class="perfil" src="css/img/perfil-4.jpg">
+                        <img class="hidden" src="css/img/band-1-1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="name">Roberto Musso</h3>
+                        <p class="band-group">El Cuarteto de Nos</p>
+                        <hr class="hr">
+                        <p class="i-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium culpa iusto nobis, soluta vero harum, dolor voluptates obcaecati non blanditiis odio?.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="popUp">
+        <div id="popUp-c">
+            <img id="pop-img-band" src="">
+            <img  id="pop-img" src="">
+            <div id="pop-content">
+                <h2 id="pop-name"></h2>
+                <h3 id="pop-band"></h3>
+                <h4 id="inter"> Interviwes :</h4>
+                <p id="pop-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="menu-function.js"></script>
 </body>
 </html>
