@@ -23,7 +23,7 @@ const closeBtn=document.querySelector('.close-pop');
 closeBtn.addEventListener('click', rOpen);
 
 /* ---------- Pop up ------------ */
-const inter = document.querySelectorAll('.content, .bg-perfil, .band-item');
+const inter = document.querySelectorAll('.content, #bg-perfil');
 console.log(inter);
 
 function popUp(e) {
@@ -34,10 +34,10 @@ function popUp(e) {
     const img = i.querySelector('.perfil').src;
 
     pop.querySelector('#pop-name').innerHTML = name;
-    pop.querySelector('#pop-img').src= img;
+    pop.querySelector('#zoom-in').src= img;
     pop.querySelector('#pop-band').innerHTML = i.querySelector('.band-group').textContent;
     pop.querySelector('#pop-text').innerHTML = i.querySelector('.i-text').textContent;
-    pop.querySelector('#pop-img-band').src = i.querySelector('.hidden').src;
+    pop.querySelector('#zoom-out').src = i.querySelector('.hidden').src;
 }
 
 
@@ -46,5 +46,16 @@ for(let i=0; i < inter.length ; i++){
     console.log(inter[i]);
 }
 
+const zoom = document.querySelector('#zoom-out');
+zoom.addEventListener('click', () => {
+    const zoomIn= document.querySelector('#zoom-in');
+    const aux = zoom.src;
+    zoom.src = zoomIn.src;
+    zoomIn.src = aux;
+});
 
-
+const closePopUp=document.querySelector('.c-popUp');
+closePopUp.addEventListener('click', () => {
+    const close = document.querySelector('.popUp');
+    close.classList.remove('open');
+});
